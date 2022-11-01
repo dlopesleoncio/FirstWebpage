@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+
+div{
+    color:white;
+    font-size:large;
+}
+
+
+.box{
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 80%;
+}

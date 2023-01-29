@@ -3,10 +3,12 @@ body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    color: white;
+    
 }
 
 
-div{
+div,h4,h3{
     color:white;
     font-size:large;
 }
@@ -18,5 +20,63 @@ div{
     margin-bottom: 10%;
     width: 80%;
     
-;
+}
+
+ul{
+    width:60%;
+    margin:auto;
+
+}
+h4{
+    text-align:left;
+}
+
+fieldset{
+    width: 90%;
+    margin:0 auto;
+    padding: 0 2rem;
+}
+label{
+    display:block;
+    margin-top: 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    
+}
+input{
+    width:4rem;
+    margin-right:0%;
+    vertical-align:top;
+}
+div{
+    display:inline-block;
+    width:12rem;
+}
+     
+.EE{
+    width:60%;
+    margin:0 auto;
+}
+
+.res{
+    display: inline-block;
+    width:80px;
+    height: 16px;
+    
+    border: 2px solid rgb(160, 153, 122);
+    background: bisque;
+    vertical-align: bottom;
+    text-align: center;
+    color: black;
+    padding-bottom: 2px;
+
+}
+.secao{
+    margin-left: 40px;
+}
+
+hr.dott{
+    border-top: dotted;
+    border-bottom: none;
 }

@@ -12,17 +12,28 @@
 <body class="EE">
     <h1> ** Ferramentas e conceitos</h1>
 
-    
-    <fieldset>
-        <h3>Dimensionamento de condutores</h3>
-        <h4><li>Ampacidade</h4></li>
-        <label><div class="EEw">Corrente de projeto:</div><input id="Ip"></label>
-        <label><div class="EEw">Numero de condutores:</div><input id="n"></label>
-        <label><div class="EEw">Temperatura</div><input id="T"></label>
-        <hr class="dott">
-        <label><div class="secao EEw">Seção mínima:</div><div id="Res" class="res"></div> mm²</label>
-        <h4><li>Queda de tensão</li></h4>
-    </fieldset>
+    <form id="amp">
+        <fieldset>
+            <h3>Dimensionamento de condutores</h3>
+            <h4><li>Ampacidade</h4></li>
+            <label><div class="EEw">Corrente de projeto:</div><input type="text" id="Ip"></label>
+            <label><div class="EEw">Numero de circuitos:</div><input id="n"></label>
+            <label><div class="EEw">Temperatura</div><select id="T">
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>      
+            </select></label>
+            <label><div><input type="button" onclick="ampaci()" value="Calcular"></div></label>
+            <hr class="dott">
+            <label><div class="secao EEw">Seção mínima:</div><div id="Res" class="res"></div> mm²</label>
+            <h4><li>Queda de tensão</li></h4>
+        </fieldset>      
+    </form>
     <hr>
     <section>
         <h4>Banco de capacitor</h4>
@@ -38,4 +49,6 @@
     </section>
     
 </body>
+<script src="scriptEE.js"></script>
+
 </html>
